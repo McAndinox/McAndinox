@@ -19,32 +19,63 @@
 		}
 	}
 
-	.container {
-		z-index: 1;
 
-		.carousel {
+
+	.carousel {
+		z-index: 0;
+		text-align: center;
+		margin-bottom: 60px;
+
+		.carousel-inner {
+			padding: 0 60px;
+			position: relative;
 			z-index: 1;
-			text-align: center;
-			margin-bottom: 60px;
 
-			.carousel-inner {
-				padding: 0 60px;
-			}
+			.item {
 
-			.row {
-				text-align: center;
-			}
+				.container {
+					padding: 0 30px;
 
-			.producto {
-				display: inline-block;
-
-				.nombre-producto {
-					color: $azul;
-					font-size: 0.9em;
+					@media(min-width: 768px) {
+						padding: 0 100px;
+					}
+					
 				}
 			}
 		}
+
+		.row {
+			text-align: center;
+		}
+
+		.producto {
+			display: inline-block;
+
+			.nombre-producto {
+				color: $azul;
+				font-size: 0.9em;
+			}
+		}
 	}
+
+	.controles {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+	}
+
+	.marca-de-agua {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 0;
+	}
+
 
 	.carousel-control {
 		background-image: none;
@@ -90,6 +121,15 @@
 		}
 	}
 
+	[class*='outline'] {
+		position: absolute;
+		top:50px;
+		margin-top: -300px;
+		font-size: 900px;
+		color:lighten($gris, 35);
+		z-index: 0;
+	}
+
 	.ver-mas {
 		position: absolute;
 		right: 50%;
@@ -101,14 +141,6 @@
 			margin-right: 0;
 		}
 
-		+ [class*='icono'] {
-			position: absolute;
-			top:50px;
-			margin-top: -200px;
-			font-size: 900px;
-			color:lighten($gris, 35);
-			z-index: 0;
-		}
 	}
 
 }
