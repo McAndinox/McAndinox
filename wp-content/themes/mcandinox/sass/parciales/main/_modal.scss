@@ -1,0 +1,48 @@
+.modal {
+
+	.modal-dialog {
+
+		.modal-content {
+			@include border-radius(0);
+
+			.modal-body {
+				position: relative;
+				padding: 2px;
+
+				.close {
+					display: block;
+					position: absolute;
+					top: 0px;
+					right: -70px;
+					font-family: 'Akzidenz-Grotesk BQ Light Condensed';
+					font-size: 1em;
+					text-transform: uppercase;
+					outline: none;
+					color: $azul;
+					height: 36px;
+					line-height: 36px;
+					padding: 0 15px;
+					border: solid 1px $azul;
+					opacity: 1;
+					background-color: white;
+					@include text-shadow(none);
+					@include transicion-basica();
+
+					&:hover {
+						text-decoration: none;
+						height: 42px;
+						color: lighten($azul, 40);
+						border-color: lighten($azul, 40);
+					}
+
+					&:focus, &:active {
+						outline: none;
+						border-color: white;
+						background-color: white;
+						@include box-shadow(none);
+					}
+				}
+			}
+		}
+	}
+}

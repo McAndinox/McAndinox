@@ -1,0 +1,55 @@
+// Compass
+@import "compass";
+
+// Pie
+@import "compass/css3/pie"; 
+@import "compass/css3";
+$pie-behavior: url(PIE.htc);
+
+
+//colores
+
+
+$azul: #007cdf;
+$gris: #929292;
+$gris-claro: #f3f3f3;
+
+$azul-twitter: #00aced;
+
+
+//logo e iconos
+
+$logo: "\e600";
+$logo-a: "\e60d";
+$logo-b: "\e603";
+$isotipo: "\e60c";
+
+$icono-accesorios:"\e603";
+$icono-accesorios-outline:"\e602";
+$icono-agitadores:"\e605";
+$icono-agitadores-outline:"\e604";
+$icono-bombas:"\e607";
+$icono-bombas-outline:"\e606";
+$icono-tapas:"\e609";
+$icono-tapas-outline:"\e608";
+$icono-valvulas:"\e60b";
+$icono-valvulas-outline:"\e60a";
+
+$icono-adelante:"\e600";
+$icono-atras:"\e601";
+
+
+//opacidades
+
+$opacidad-10: 0.11;
+$opacidad-20: 0.2;
+$opacidad-30: 0.3;
+$opacidad-40: 0.4;
+$opacidad-50: 0.5;
+$opacidad-60: 0.6;
+$opacidad-70: 0.7;
+$opacidad-80: 0.8;
+$opacidad-90: 0.9;
+
+
+@import "modulos/all";

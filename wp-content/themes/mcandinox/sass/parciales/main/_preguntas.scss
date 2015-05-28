@@ -1,0 +1,16 @@
+#preguntas {
+	margin: 0;
+	padding: 0;
+
+	.pregunta {
+		padding: 56px 0 56px 156px;
+		border-bottom: 2px dotted $rojo;
+		list-style: none;
+
+		h2 {
+			padding: 0;
+			margin: 0 0 10px;
+		}
+	}
+
+}

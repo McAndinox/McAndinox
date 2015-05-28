@@ -1,0 +1,57 @@
+form {
+
+	.form-group {
+
+		input, textarea {
+			font-family: 'Aller Light';
+			font-size: 1.4em;
+			border: none;
+			background-color: lighten($azul, 70);
+			@include border-radius(0);
+			@include box-shadow(none);
+		}
+
+		input {
+			height: 76px;
+			line-height: 76px;
+		}
+
+		textarea {
+			min-height: 246px;
+		}
+	}
+
+	.btn {
+		font-family: 'Akzidenz-Grotesk BQ Light Condensed';
+		position: relative;
+		font-size: 1.6em;
+		color: white;
+		display: block;
+		float: right;
+		text-transform: uppercase;
+		outline: none;
+		width: auto;
+		height: 76px;
+		line-height: 76px;
+		padding: 0 30px;
+		border: solid 1px white;
+		background-color: transparent;
+		@include border-radius(0);
+		@include box-shadow(none);
+		@include transicion-basica();
+
+		&:hover {
+			color: white;
+			height: 72px;
+			border-color: lighten($azul, 60);
+			background-color: transparent;
+		}
+
+		&:focus, &:active {
+			outline: none;
+			border-color: white;
+			background-color: white;
+			@include box-shadow(none);
+		}
+	}
+}

@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-fujowb');
+	src:url('../fonts/icomoon.eot?#iefix-fujowb') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-fujowb') format('woff'),
+		url('../fonts/icomoon.ttf?-fujowb') format('truetype'),
+		url('../fonts/icomoon.svg?-fujowb#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icono-"], [class*=" icono-"], [class^="logo-"], [class*=" logo-"], [class="isotipo"] {
+	@include icon();
+	@include transicion-basica();
+}
+
+.logo:before {
+	content: $logo;
+}
+
+.logo-a:before {
+	content: $logo-a;
+}
+
+.logo-b:after {
+	content: $logo-b;
+}
+
+.isotipo:before {
+	content: $isotipo;
+}
+
+
+.icono-accesorios:before {
+	content: $icono-accesorios;
+}
+
+.icono-accesorios-outline:before {
+	content: $icono-accesorios-outline;
+}
+
+.icono-agitadores:before {
+	content: $icono-agitadores;
+}
+
+.icono-agitadores-outline:before {
+	content: $icono-agitadores-outline;
+}
+
+.icono-bombas:before {
+	content: $icono-bombas;
+}
+
+.icono-bombas-outline:before {
+	content: $icono-bombas-outline;
+}
+
+.icono-tapas:before {
+	content: $icono-tapas;
+}
+
+.icono-tapas-outline:before {
+	content: $icono-tapas-outline;
+}
+
+.icono-valvulas:before {
+	content: $icono-valvulas;
+}
+
+.icono-valvulas-outline:before {
+	content: $icono-valvulas-outline;
+}
+
+.icono-adelante:before {
+	content: $icono-adelante;
+}
+
+.icono-atras:before {
+	content: $icono-atras;
+}

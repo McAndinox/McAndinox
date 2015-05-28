@@ -1,0 +1,26 @@
+#footer {
+	background-color: $azul;
+	overflow: hidden;
+	color: white;
+
+	.container {
+		min-height: 600px;
+	}
+
+	#datos {
+		width: 100%;
+		position: absolute;
+		bottom: 60px;
+		text-align: center;
+		z-index: 1;
+	}
+
+	.isotipo {
+		position: absolute;
+		font-size: 700px;
+		color: lighten($azul, 5);
+		left: 50%;
+		margin-left: -420px;
+		z-index: 0;
+	}
+}

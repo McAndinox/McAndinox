@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Malaga OT';
+    src: url('../fonts/malaga-regular.eot');
+    src: url('../fonts/malaga-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/malaga-regular.woff2') format('woff2'),
+         url('../fonts/malaga-regular.woff') format('woff'),
+         url('../fonts/malaga-regular.ttf') format('truetype'),
+         url('../fonts/malaga-regular.svg#malaga-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Malaga OT Italic';
+    src: url('../fonts/malaga-regularitalic.eot');
+    src: url('../fonts/malaga-regularitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/malaga-regularitalic.woff2') format('woff2'),
+         url('../fonts/malaga-regularitalic.woff') format('woff'),
+         url('../fonts/malaga-regularitalic.ttf') format('truetype'),
+         url('../fonts/malaga-regularitalic.svg#malaga-regularitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    //font-family: 'Malaga OT', Georgia, Times, 'Times New Roman', serif; 
+}
+
+
+h1 {
+}
+
+h2 {
+    font-size: 3em;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+     //color: $azul-corporativo;
+     //font-size: 1.8em;
+}
+
+p, ul {
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+
+ul {
+    li {
+        margin-bottom: 20px;
+    }
+}
+
+b, strong {
+}
+
+table {
+    font-size: 1.2em;
+    line-height: 1.5em;
+
+    th {
+    }
+
+    td {
+    }
+}
+
+em {
+    font-size: 1.3em;
+}
+
+p, ul li, strong, b, address, em, label, table {
+}
+
+a {
+	@include transicion-rapida();
+}
+
+
+blockquote {
+    // position: relative;
+
+    // &:before {
+    //     content: '"';
+    //     display: block;
+    //     position: absolute;
+    //     left: 0px;
+    // }
+
+    // &:after {
+    //     content: '"';
+    //     display: block;
+    //     position: absolute;
+    //     right: 0px;
+    // }
+
+    // p {
+    // }
+}
