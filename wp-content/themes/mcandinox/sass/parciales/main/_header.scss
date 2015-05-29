@@ -1,3 +1,153 @@
 #header {
 	height: 100px;
+
+	#logo {
+		display: inline-block;
+	}
+
+	#menu {
+	float: right;
+	z-index: 10;
+	@include transicion-rapida();
+
+	.nav {
+		margin-top:25px;
+
+		li {
+			position: relative;
+			margin: 0;
+
+			a {
+				text-transform: uppercase;
+				font-size: 0.7em;
+				font-weight: 400;
+				color: $gris;
+
+				.icono-flecha-abajo {
+					position: relative;
+					margin-right: 5px;
+
+					&:before {
+					}
+				}
+
+				&:hover {
+					background-color: transparent;
+					color: $azul;
+					text-decoration: none;
+
+					.icono-flecha-abajo {
+
+						&:before {
+							margin-top: 3px;
+						}
+					}
+				}
+			}
+
+			&.menu-parent-item {
+
+				> a {
+
+					&:before {
+						display: inline-block;
+						//content: $icono-flecha-abajo;
+						margin-right: 4px;
+						@include icon();
+						@include transicion-basica();
+					}
+				}
+			}
+
+			&[class*="current"] {
+
+				a {
+					color: lighten($azul, 25);
+				}
+
+				li[class*="current"] {
+
+					a {
+						color: lighten($gris, 25);
+					}
+				}
+
+			}
+
+			ul {
+				position: absolute;
+				background-color: $gris-claro;
+				left: 18px;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				z-index: 10;
+				pointer-events:none;
+				margin-top: -5px;
+				@include transicion-rapida();
+				@include opacity(0);
+				//@include border-radius(5px);
+
+				&:before {
+					display: block;
+					position: absolute;
+					top: -10px;
+					left: 0;
+					content: '';
+					width: 15px;
+					height: 20px;
+					background-color: $gris-claro;
+					@include border-radius(0px 20px 0 0);
+					@include transicion-rapida();
+				}
+
+				li {
+					padding: 0 20px;
+
+					a {
+						display: block;
+						font-size: 0.42em;
+						padding: 15px 0px;
+						border-bottom: 1px solid lighten($gris, 30);
+						line-height: 1.2em;
+						//width: 160px;
+						color: $gris;
+
+						&:hover {
+							padding: 18px 0px 18px 2px;
+							color: $azul;
+						}
+					}
+
+					&:last-child {
+
+						a {
+							border: none;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				
+				ul {
+					@include opacity(1);
+					pointer-events:auto;
+					margin-top: 0px;
+
+					&:before {
+						top: -5px;
+					}
+
+					li {
+
+						a {
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
 }

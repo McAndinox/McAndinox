@@ -1,5 +1,6 @@
 #titular {
 	background-color: $azul;
+	overflow: hidden;
 
 	.container {
 		min-height: 500px;
@@ -58,3 +59,5 @@
 		}
 	}
 }
+
+@include carousel-fade();

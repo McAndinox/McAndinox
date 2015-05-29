@@ -27,8 +27,34 @@
                         <img alt="Logo Mc Andinox" src="../wp-content/themes/mcandinox/img/logo.svg" width="200" height="auto">
                     </a>   
                 </h1>
-                <nav id="menu">
-                </nav>
+                <nav id="menu" class="" role="navigation">
+            	<div class="navbar-header">
+                      <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#navbar-menu-principal">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"> </span>
+                      </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu-principal">
+                    <ul role="menu" class="nav navbar-nav">
+                        <li class="current_page_item"><a href="index.html">Inicio</a></li>
+                        <li>
+                        	<a href="productos/index.html" data-toggle="dropdown"><i class="icono-flecha-abajo"></i>Productos</a>
+                            <ul>
+                            	<li><a href="productos/valvulas.html">Válvulas</a></li>
+                                <li><a href="productos/bombas.html">Bombas</a></li>
+                                <li><a href="productos/agitadores.html">Agitadores</a></li>
+                                <li><a href="productos/accesorios.html">Accesorios</a></li>
+                                <li><a href="productos/tapas.html">Tapas</a></li>
+                                <li><a href="productos/equipos.html">Equipos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="nosotros.html">Nosotros</a></li> 
+                        <li><a href="contacto.html">Contáctenos</a></li>
+                    </ul>
+                </div>
+            </nav>
             </div>
         </header>
         <section id="titular">
@@ -39,7 +65,7 @@
                     </div>
                     <div class="col-md-6">
                     	<p>Los Mejores <strong>Avances Tecnológicos</strong> para la conducción de fluidos</p>
-                        <button>Solicitar Información <i class="icono-adelante"></i></button>
+                        <button class="btn" data-toggle="modal" data-target="#modal-contacto">Solicitar Información <i class="icono-adelante"></i></button>
                     </div>
                 </div>
             </div>
@@ -619,6 +645,60 @@
                 <i class="isotipo"></i>
             </div>
         </footer>
+        
+<div class="modal fade" id="modal-contacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+        <h4 class="modal-title" id="myModalLabel">Solicitar Información</h4>
+      </div>
+       <form>
+      <div class="modal-body">
+        	<h3>Su información de contacto</h3>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su nombre...">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su email...">
+          </div>
+          <h3>¿En cual de nuestros productos está interesado?</h3>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Estructuración del Modelo de Gobierno Corporativo.
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Evaluación de Juntas Directivas.
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Auditoría en Gobierno Corporativo.
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Acompañamiento e Implementación de Buenas Prácticas.
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Análisis de Dilemas Éticos y Conflictos de Interés.
+            </label>
+          </div>
+      </div>
+      <div class="modal-footer">
+       	<button type="submit" class="btn btn-default">Enviar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+       </form>
+    </div>
+  </div>
+</div>
     
 	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../wp-content/themes/mcandinox/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
