@@ -61,7 +61,26 @@
         	<div class="container">
             	<div class="row">
                 	<div class="col-md-6">
-                    	<img src="wp-media/titular-imagen-a.jpg" class="img-responsive">
+                    	<div id="carousel-titular" class="carousel slide carousel-fade" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="wp-media/titular-imagen-a.jpg" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="wp-media/titular-imagen-b.jpg" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="wp-media/titular-imagen-c.jpg" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="wp-media/titular-imagen-d.jpg" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="wp-media/titular-imagen-e.jpg" class="img-responsive">
+                            </div>
+                          </div>
+                        </div>
                     </div>
                     <div class="col-md-6">
                     	<p>Los Mejores <strong>Avances Tecnológicos</strong> para la conducción de fluidos</p>
@@ -106,7 +125,7 @@
                 	<li class="col-xs-6 col-md-4">
                     	<a class="categoria" href="#">
                     		<h2>Equipos</h2>
-                            <i class="icono-tapas"></i>
+                            <i class="icono-equipos"></i>
                         </a>	
                     </li>
                 </ul>
@@ -211,7 +230,7 @@
             </div>
 
             <div class="container">
-                <a class="ver-mas">Ver más<i class="icono-adelante"></i></a>   
+                <a class="ver-mas" href="productos/valvulas.html">Ver más<i class="icono-adelante"></i></a>   
             </div>       
         </section>
         <section id="accesorios" class="carousel-productos">
@@ -331,7 +350,7 @@
             </div>
 
             <div class="container">
-                <a class="ver-mas">Ver más<i class="icono-adelante"></i></a>   
+                <a class="ver-mas"  href="productos/accesorios.html">Ver más<i class="icono-adelante"></i></a>   
             </div>       
         </section>
         <section id="agitadores" class="carousel-productos">
@@ -397,7 +416,7 @@
             </div>
 
             <div class="container">
-                <a class="ver-mas">Ver más<i class="icono-adelante"></i></a>   
+                <a class="ver-mas"  href="productos/agitadores.html">Ver más<i class="icono-adelante"></i></a>   
             </div>       
         </section>
         <section id="bombas" class="carousel-productos">
@@ -499,7 +518,7 @@
             </div>
 
             <div class="container">
-                <a class="ver-mas">Ver más<i class="icono-adelante"></i></a>   
+                <a class="ver-mas"  href="productos/bombas.html">Ver más<i class="icono-adelante"></i></a>   
             </div>       
         </section>
         <section id="tapas" class="carousel-productos">
@@ -521,13 +540,13 @@
                         </div>
                         <div class="producto col-md-4">
                             <figure>
-                                <img src="wp-media/tapa-a.png" class="img-responsive">
+                                <img src="wp-media/tapa-b.png" class="img-responsive">
                             </figure>
                             <h3 class="nombre-producto">Válvula tipo industrial</h3>
                         </div>
                         <div class="producto col-md-4">
                             <figure>
-                                <img src="wp-media/tapa-a.png" class="img-responsive">
+                                <img src="wp-media/tapa-c.png" class="img-responsive">
                             </figure>
                             <h3 class="nombre-producto">Válvula tipo industrial</h3>
                         </div>
@@ -539,7 +558,7 @@
                     	<div class="row">
                         <div class="producto col-md-4">
                             <figure>
-                                <img src="wp-media/tapa-a.png" class="img-responsive">
+                                <img src="wp-media/tapa-d.png" class="img-responsive">
                             </figure>
                             <h3 class="nombre-producto">Válvula tipo industrial</h3>
                         </div>
@@ -551,7 +570,7 @@
                         </div>
                         <div class="producto col-md-4">
                             <figure>
-                                <img src="wp-media/tapa-a.png" class="img-responsive">
+                                <img src="wp-media/tapa-b.png" class="img-responsive">
                             </figure>
                             <h3 class="nombre-producto">Válvula tipo industrial</h3>
                         </div>
@@ -577,7 +596,7 @@
             </div>
 
             <div class="container">
-                <a class="ver-mas">Ver más<i class="icono-adelante"></i></a>   
+                <a class="ver-mas"  href="productos/tapas.html">Ver más<i class="icono-adelante"></i></a>   
             </div>       
         </section>
         <section id="equipos" class="carousel-productos">
@@ -620,12 +639,12 @@
                   </a>
               </div>
               <div class="marca-de-agua container">
-              	<i class="icono-tapas-outline"></i>
+              	<i class="icono-equipos-outline"></i>
               </div>
             </div>
 
             <div class="container">
-                <a class="ver-mas">Ver más<i class="icono-adelante"></i></a>   
+                <a class="ver-mas"  href="productos/equipos.html">Ver más<i class="icono-adelante"></i></a>   
             </div>       
         </section>
         
@@ -651,10 +670,36 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-        <h4 class="modal-title" id="myModalLabel">Solicitar Información</h4>
+        <h4 class="modal-title" id="myModalLabel"></h4>
       </div>
        <form>
       <div class="modal-body">
+          <h3>¿En cual de nuestros productos está interesado?</h3>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Válvulas
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Bombas
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Agitadores
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Accesorios
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Tapas
+            </label>
+          </div>
         	<h3>Su información de contacto</h3>
           <div class="form-group">
             <label for="exampleInputEmail1">Nombre:</label>
@@ -664,31 +709,9 @@
             <label for="exampleInputEmail1">Email:</label>
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su email...">
           </div>
-          <h3>¿En cual de nuestros productos está interesado?</h3>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Estructuración del Modelo de Gobierno Corporativo.
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Evaluación de Juntas Directivas.
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Auditoría en Gobierno Corporativo.
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Acompañamiento e Implementación de Buenas Prácticas.
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox"> Análisis de Dilemas Éticos y Conflictos de Interés.
-            </label>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" placeholder="Mensaje..."></textarea>
           </div>
       </div>
       <div class="modal-footer">

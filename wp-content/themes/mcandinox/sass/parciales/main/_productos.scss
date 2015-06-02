@@ -1,6 +1,17 @@
 #productos {
 	background-color: $gris-claro;
 
+	h2 {
+		color: $gris;
+		text-transform: uppercase;
+		font-size: 2em;
+		font-weight: bold;
+
+		+ ul {
+			margin-bottom: 80px;
+		}
+	}
+
 	ul {
 		margin: 0;
 

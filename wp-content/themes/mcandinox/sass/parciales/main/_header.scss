@@ -1,5 +1,7 @@
 #header {
 	height: 100px;
+	position: relative;
+	z-index: 1;
 
 	#logo {
 		display: inline-block;

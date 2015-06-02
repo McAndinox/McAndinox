@@ -2,11 +2,15 @@ form {
 
 	.form-group {
 
+		label {
+			color: $azul;
+		}
+
 		input, textarea {
-			font-family: 'Aller Light';
+			//font-family: 'Aller Light';
 			font-size: 1.4em;
 			border: none;
-			background-color: lighten($azul, 70);
+			background-color: lighten($gris, 40);
 			@include border-radius(0);
 			@include box-shadow(none);
 		}
@@ -19,38 +23,63 @@ form {
 		textarea {
 			min-height: 246px;
 		}
+
+	}
+
+	.checkbox {
+		padding-left: 20px;
+		border-left: 1px solid $azul;
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+
+		label {
+			color: $gris;
+			font-size: 1.5em;
+			padding-left: 20px;
+		}
+	}
+
+	h3 {
+		color: $gris;
+		margin: 30px 0 40px 0;
 	}
 
 	.btn {
-		font-family: 'Akzidenz-Grotesk BQ Light Condensed';
+		//font-family: 'Akzidenz-Grotesk BQ Light Condensed';
 		position: relative;
-		font-size: 1.6em;
+		font-size: 1.2em;
 		color: white;
-		display: block;
+		display: inline-block;
 		float: right;
 		text-transform: uppercase;
 		outline: none;
 		width: auto;
-		height: 76px;
-		line-height: 76px;
-		padding: 0 30px;
-		border: solid 1px white;
-		background-color: transparent;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 20px;
+		margin: 0 0 0 5px;
+		border: none;
+		font-weight: bold;
+		background-color: $azul;
 		@include border-radius(0);
 		@include box-shadow(none);
 		@include transicion-basica();
 
 		&:hover {
 			color: white;
-			height: 72px;
-			border-color: lighten($azul, 60);
-			background-color: transparent;
+			//height: 72px;
+			//border-color: lighten($azul, 60);
+			background-color: lighten($azul,5);
+			padding: 0 25px 0 15px;
+
 		}
 
 		&:focus, &:active {
 			outline: none;
-			border-color: white;
-			background-color: white;
+			//border-color: white;
+			padding: 0 25px 0 15px;
+			background-color: lighten($azul,5);
 			@include box-shadow(none);
 		}
 	}

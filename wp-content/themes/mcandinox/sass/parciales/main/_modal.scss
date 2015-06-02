@@ -1,9 +1,18 @@
 .modal {
 
+	.modal-header {
+		border:none;
+	}
+
 	.modal-dialog {
 
 		.modal-content {
 			@include border-radius(0);
+
+			form {
+				display: block;
+				padding: 20px 40px;
+			}
 
 			.modal-body {
 				position: relative;
@@ -14,7 +23,7 @@
 					position: absolute;
 					top: 0px;
 					right: -70px;
-					font-family: 'Akzidenz-Grotesk BQ Light Condensed';
+					//font-family: 'Akzidenz-Grotesk BQ Light Condensed';
 					font-size: 1em;
 					text-transform: uppercase;
 					outline: none;
@@ -37,12 +46,16 @@
 
 					&:focus, &:active {
 						outline: none;
-						border-color: white;
-						background-color: white;
+						//border-color: white;
+						//background-color: white;
 						@include box-shadow(none);
 					}
 				}
 			}
 		}
+	}
+
+	.modal-footer {
+		padding:20px 0;
 	}
 }
