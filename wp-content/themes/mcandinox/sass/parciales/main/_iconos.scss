@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-fujowb');
-	src:url('../fonts/icomoon.eot?#iefix-fujowb') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-fujowb') format('woff'),
-		url('../fonts/icomoon.ttf?-fujowb') format('truetype'),
-		url('../fonts/icomoon.svg?-fujowb#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -70,6 +70,15 @@
 .icono-valvulas-outline:before {
 	content: $icono-valvulas-outline;
 }
+
+.icono-equipos:before {
+	content: $icono-equipos;
+}
+
+.icono-equipos-outline:before {
+	content: $icono-equipos-outline;
+}
+
 
 .icono-adelante:before {
 	content: $icono-adelante;
